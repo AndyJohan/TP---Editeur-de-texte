@@ -1,103 +1,51 @@
-// Service de lemmatisation pour le Malagasy
+import API_BASE_URL from './api';
+
 class Lemmatizer {
   constructor() {
-    // Préfixes à retirer
-    this.prefixes = [
-      'maha', 'mpan', 'mpam', 'man', 'mam', 'mi', 'ma',
-      'fan', 'fam', 'fi', 'f', 'an', 'am', 'i'
-    ];
-
-    // Suffixes à retirer
-    this.suffixes = [
-      'ana', 'ina', 'na', 'any', 'a'
-    ];
-
-    // Racines connues
-    this.knownRoots = {
-      'manoratra': 'soratra',
-      'manao': 'ao',
-      'mandeha': 'deha',
-      'mihinana': 'hina',
-      'misotro': 'sotro',
-      'matory': 'tory',
-      'mahita': 'hita',
-      'mahare': 'hare',
-      'mahalala': 'halala',
-      'mahafantatra': 'fantatra',
-      'mianatra': 'ianatra',
-      'mampianatra': 'ianatra',
-      'miasa': 'asa',
-      'mihira': 'hira',
-      'mandihy': 'dihy',
-      'milalao': 'lalao',
-      'mamaky': 'vaky',
-      'manosika': 'tosika',
-      'manokatra': 'sokatra',
-      'manidy': 'hidy',
-      'mandoko': 'loko',
-      'manadio': 'madio',
-      'mividy': 'vidy',
-      'mivarotra': 'varotra',
-      'mandoa': 'doa',
-      'mandray': 'ray'
-    };
+    this.cache = new Map();
   }
 
-  findRoot(word) {
-    const cleanWord = word.toLowerCase().trim();
-
-    // Vérifie si la racine est connue
-    if (this.knownRoots[cleanWord]) {
-      return this.knownRoots[cleanWord];
+  /**
+   * Trouve la racine d'un mot
+   */
+  async findRoot(word) {
+    if (this.cache.has(word)) {
+      return this.cache.get(word);
     }
 
-    let root = cleanWord;
+    try {
+      const response = await fetch(`${API_BASE_URL}/lemmatize`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ word }),
+      });
 
-    // Retire les préfixes (du plus long au plus court)
-    for (let prefix of this.prefixes.sort((a, b) => b.length - a.length)) {
-      if (root.startsWith(prefix) && root.length > prefix.length + 2) {
-        root = root.substring(prefix.length);
-        break;
-      }
+      const data = await response.json();
+      
+      const result = {
+        original: data.original,
+        root: data.root,
+        prefix: data.prefix,
+        suffix: data.suffix,
+        has_prefix: data.has_prefix,
+        has_suffix: data.has_suffix
+      };
+      
+      this.cache.set(word, result);
+      return result;
+    } catch (error) {
+      console.error('Erreur findRoot:', error);
+      return {
+        original: word,
+        root: word,
+        prefix: '',
+        suffix: '',
+        has_prefix: false,
+        has_suffix: false
+      };
     }
-
-    // Retire les suffixes (du plus long au plus court)
-    for (let suffix of this.suffixes.sort((a, b) => b.length - a.length)) {
-      if (root.endsWith(suffix) && root.length > suffix.length + 2) {
-        root = root.substring(0, root.length - suffix.length);
-        break;
-      }
-    }
-
-    return root;
-  }
-
-  // Décompose un mot en préfixe + racine + suffixe
-  decompose(word) {
-    const cleanWord = word.toLowerCase().trim();
-    let prefix = '';
-    let root = cleanWord;
-    let suffix = '';
-
-    // Trouve le préfixe
-    for (let p of this.prefixes.sort((a, b) => b.length - a.length)) {
-      if (root.startsWith(p)) {
-        prefix = p;
-        root = root.substring(p.length);
-        break;
-      }
-    }
-
-    // Trouve le suffixe
-    for (let s of this.suffixes.sort((a, b) => b.length - a.length)) {
-      if (root.endsWith(s)) {
-        suffix = s;
-        root = root.substring(0, root.length - s.length);
-        break;
-      }
-    }
-
-    return { prefix, root, suffix };
   }
 }
 

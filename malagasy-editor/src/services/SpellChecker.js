@@ -1,72 +1,86 @@
-// Service de vérification orthographique pour le Malagasy
+import API_BASE_URL from './api';
+
 class SpellChecker {
   constructor() {
-    // Dictionnaire de base - peut être étendu avec scraping de tenymalagasy.org
-    this.dictionary = new Set([
-      'aho', 'ianao', 'izy', 'isika', 'izahay', 'ianareo',
-      'ny', 'ilay', 'ity', 'io', 'ireo',
-      'dia', 'fa', 'ary', 'sy', 'na', 'raha', 'satria', 'nefa',
-      'tsy', 'tsia', 'eny', 'marina',
-      'manao', 'mandeha', 'mipetraka', 'mihinana', 'misotro', 'matory',
-      'mahita', 'mahare', 'mahalala', 'mahafantatra',
-      'trano', 'tany', 'rano', 'vary', 'mofo', 'sakay', 'sira',
-      'fianakaviany', 'ray', 'reny', 'zanaka', 'anadahy', 'anabavy',
-      'be', 'kely', 'tsara', 'ratsy', 'fo', 'mainty', 'fotsy',
-      'iray', 'roa', 'telo', 'efatra', 'dimy', 'enina', 'fito', 'valo',
-      'ankehitriny', 'omaly', 'rahampitso', 'maraina', 'hariva', 'alina',
-      'taona', 'volana', 'herinandro', 'andro', 'ora', 'minitra',
-      'malagasy', 'madagasikara', 'tanindrazana',
-      'fitiavana', 'hasina', 'fahasoavana', 'fahamarinana',
-      'manoratra', 'mamaky', 'mianatra', 'mampianatra',
-      'miasa', 'mihira', 'mandihy', 'milalao',
-      'lehibe', 'madinika', 'lava', 'fohy',
-      'antananarivo', 'toamasina', 'antsirabe', 'fianarantsoa',
-      'andriamanitra', 'masina', 'baiboly', 'fivavahana',
-      'hazo', 'voninkazo', 'ravina', 'vato',
-      'alika', 'saka', 'vorona', 'trondro', 'omby', 'akoho',
-      'loha', 'maso', 'sofina', 'orona', 'vava', 'tanana', 'tongotra'
-    ]);
-
-    this.invalidCombinations = ['nb', 'mk', 'dt', 'bp', 'sz', 'nk'];
-    this.prefixes = ['mi', 'ma', 'man', 'mam', 'maha', 'mpan', 'fi', 'fan'];
-    this.suffixes = ['ana', 'ina', 'na'];
+    this.cache = new Map();
   }
 
-  checkWord(word) {
-    const cleanWord = word.toLowerCase().trim();
-    if (this.dictionary.has(cleanWord)) return true;
-    for (let combo of this.invalidCombinations) {
-      if (cleanWord.includes(combo)) return false;
-    }
-    for (let prefix of this.prefixes) {
-      if (cleanWord.startsWith(prefix)) return true;
-    }
-    return false;
-  }
+  /**
+   * Vérifie l'orthographe d'un texte complet
+   */
+  async checkText(text) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/check`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ text }),
+      });
 
-  levenshteinDistance(str1, str2) {
-    const m = str1.length, n = str2.length;
-    const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
-    for (let i = 0; i <= m; i++) dp[i][0] = i;
-    for (let j = 0; j <= n; j++) dp[0][j] = j;
-    for (let i = 1; i <= m; i++) {
-      for (let j = 1; j <= n; j++) {
-        dp[i][j] = str1[i-1] === str2[j-1] ? dp[i-1][j-1] : 
-          Math.min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+1);
+      if (!response.ok) {
+        throw new Error('Erreur lors de la vérification');
       }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Erreur SpellChecker:', error);
+      return {
+        suggestions: [],
+        statistics: {},
+        quality_score: { score: 0, level: 'Erreur' }
+      };
     }
-    return dp[m][n];
   }
 
-  getSuggestions(word) {
-    const cleanWord = word.toLowerCase().trim();
-    const suggestions = [];
-    for (let dictWord of this.dictionary) {
-      const distance = this.levenshteinDistance(cleanWord, dictWord);
-      if (distance <= 2) suggestions.push({ word: dictWord, distance });
+  /**
+   * Vérifie un mot unique
+   */
+  async checkWord(word) {
+    if (this.cache.has(word)) {
+      return this.cache.get(word);
     }
-    suggestions.sort((a, b) => a.distance - b.distance);
-    return suggestions.slice(0, 5).map(s => s.word);
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/word-info`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ word }),
+      });
+
+      const data = await response.json();
+      const isCorrect = data.exists;
+      
+      this.cache.set(word, isCorrect);
+      return isCorrect;
+    } catch (error) {
+      console.error('Erreur checkWord:', error);
+      return true;
+    }
+  }
+
+  /**
+   * Obtient des suggestions pour un mot incorrect
+   */
+  async getSuggestions(word) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/word-info`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ word }),
+      });
+
+      const data = await response.json();
+      return data.suggestions || [];
+    } catch (error) {
+      console.error('Erreur getSuggestions:', error);
+      return [];
+    }
   }
 }
 

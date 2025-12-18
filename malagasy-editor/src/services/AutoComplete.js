@@ -1,68 +1,74 @@
-// Service d'autocomplétion avec N-grams
+import API_BASE_URL from './api';
+
 class AutoComplete {
   constructor() {
-    // Bigrammes fréquents en Malagasy
-    this.bigrams = {
-      'ny': ['aho', 'olona', 'trano', 'tanana', 'fiainana'],
-      'dia': ['mandeha', 'miasa', 'mipetraka', 'tsara'],
-      'manao': ['ahoana', 'inona', 'izany'],
-      'tsy': ['misy', 'mahalala', 'mahafantatra', 'tsara'],
-      'fa': ['tsy', 'marina', 'tsara'],
-      'izy': ['dia', 'ireo', 'no'],
-      'malagasy': ['dia', 'ny', 'tsara'],
-      'tsara': ['loatra', 'dia', 'be'],
-      'mandeha': ['any', 'aho', 'isika'],
-      'miasa': ['aho', 'izy', 'isika'],
-      'mipetraka': ['eto', 'aho'],
-      'mahafantatra': ['ny', 'aho'],
-      'mahita': ['azy', 'ny']
-    };
-
-    // Phrases communes
-    this.commonPhrases = [
-      'salama ianareo',
-      'misaotra betsaka',
-      'azafady tompoko',
-      'veloma aho',
-      'tonga soa',
-      'manao ahoana',
-      'tsara fa tsara',
-      'ny fiainana',
-      'ny tanindrazana',
-      'madagasikara sambatra'
-    ];
+    this.cache = new Map();
   }
 
-  predictNextWord(currentWord) {
-    const word = currentWord.toLowerCase().trim();
-    
-    // Cherche dans les bigrammes
-    if (this.bigrams[word]) {
-      return this.bigrams[word];
+  /**
+   * Autocomplétion d'un préfixe
+   */
+  async autocomplete(prefix, limit = 10) {
+    if (prefix.length < 2) {
+      return [];
     }
 
-    // Cherche dans les phrases communes
-    const matching = this.commonPhrases
-      .filter(phrase => phrase.startsWith(word))
-      .map(phrase => phrase.split(' ')[0]);
-
-    if (matching.length > 0) {
-      return [...new Set(matching)];
+    const cacheKey = `${prefix}-${limit}`;
+    if (this.cache.has(cacheKey)) {
+      return this.cache.get(cacheKey);
     }
 
-    // Suggestions par défaut basées sur les préfixes
-    if (word.startsWith('mi')) {
-      return ['miasa', 'mihira', 'mianatra', 'mihinana', 'misotro'];
-    }
-    if (word.startsWith('ma')) {
-      return ['manao', 'mandeha', 'mahita', 'mahalala', 'mahafantatra'];
-    }
-    if (word.startsWith('fi')) {
-      return ['fiainana', 'fianakaviany', 'fitiavana', 'fivavahana'];
-    }
+    try {
+      const response = await fetch(
+        `${API_BASE_URL}/autocomplete?prefix=${encodeURIComponent(prefix)}&limit=${limit}`
+      );
 
-    return [];
+      const data = await response.json();
+      const suggestions = data.suggestions || [];
+      
+      this.cache.set(cacheKey, suggestions);
+      return suggestions;
+    } catch (error) {
+      console.error('Erreur autocomplete:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Prédiction du mot suivant
+   */
+  async predictNextWord(context, limit = 5) {
+    try {
+      // Si context est une string, la diviser en mots
+      const contextArray = Array.isArray(context) 
+        ? context 
+        : context.split(/\s+/).filter(w => w.trim());
+
+      if (contextArray.length === 0) {
+        return [];
+      }
+
+      const response = await fetch(`${API_BASE_URL}/predict`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          context: contextArray,
+          limit 
+        }),
+      });
+
+      const data = await response.json();
+      
+      // Retourner juste les mots (compatibilité avec l'ancien code)
+      return data.predictions?.map(p => p.word) || [];
+    } catch (error) {
+      console.error('Erreur predictNextWord:', error);
+      return [];
+    }
   }
 }
 
 export default AutoComplete;
+

@@ -1,0 +1,1047 @@
+{
+  "n": 2,
+  "ngrams": {
+    "('manao',)": {
+      "ahoana": 3,
+      "devoara": 1,
+      "lalao": 1,
+      "sakafo": 1
+    },
+    "('ahoana',)": {
+      "ianao": 1,
+      "hianao": 1,
+      "ny": 1
+    },
+    "('salama',)": {
+      "e": 1,
+      "tsara": 1
+    },
+    "('veloma',)": {
+      "e": 1
+    },
+    "('misaotra',)": {
+      "betsaka": 1
+    },
+    "('azafady',)": {
+      "tompoko": 1
+    },
+    "('tsy',)": {
+      "misy": 2,
+      "afaka": 1,
+      "mandeha": 1,
+      "mahay": 2,
+      "tiako": 1,
+      "faly": 1,
+      "ampy": 1,
+      "mety": 1,
+      "azo": 1,
+      "maintsy": 1,
+      "mba": 1,
+      "ho": 1
+    },
+    "('misy',)": {
+      "fisaorana": 1,
+      "zanaka": 2,
+      "olona": 2,
+      "boky": 1,
+      "rivo-doza": 1
+    },
+    "('miala',)": {
+      "tsiny": 1
+    },
+    "('tsiny',)": {
+      "aho": 1
+    },
+    "('mihinana',)": {
+      "sakafo": 2,
+      "vary": 1
+    },
+    "('sakafo',)": {
+      "aho": 4,
+      "ny": 1,
+      "azy": 1
+    },
+    "('misotro',)": {
+      "rano": 1,
+      "kafe": 1,
+      "dite": 1
+    },
+    "('rano',)": {
+      "aho": 2
+    },
+    "('kafe',)": {
+      "aho": 1
+    },
+    "('dite',)": {
+      "aho": 1
+    },
+    "('matory',)": {
+      "aho": 1
+    },
+    "('aho',)": {
+      "ankehitriny": 1,
+      "isan'andro": 1,
+      "any": 1,
+      "amin'ny": 2,
+      "izao": 3,
+      "androany": 2,
+      "fa": 1,
+      "satria": 1,
+      "rehefa": 2,
+      "alohan'ny": 1,
+      "nandeha": 1,
+      "mipetraka": 1,
+      "handeha": 1,
+      "noho": 3,
+      "tamin'ny": 1,
+      "dia": 2
+    },
+    "('mifoha',)": {
+      "maraina": 1
+    },
+    "('maraina',)": {
+      "aho": 1
+    },
+    "('miasa',)": {
+      "aho": 1,
+      "mafy": 1,
+      "ihany": 1
+    },
+    "('mianatra',)": {
+      "aho": 1,
+      "lesona": 1
+    },
+    "('any',)": {
+      "amin'ny": 2,
+      "an-tsena": 3,
+      "am-piasana": 1,
+      "an-tsekoly": 1,
+      "an-trano": 2,
+      "an'ala": 1,
+      "avaratra": 1,
+      "atsimo": 1,
+      "atsinanana": 1,
+      "andrefana": 1,
+      "ankavanana": 1,
+      "ankavia": 1
+    },
+    "(\"amin'ny\",)": {
+      "sekoly": 1,
+      "fianakaviana": 1,
+      "fiara": 1,
+      "hena": 1,
+      "taona": 1,
+      "ataoko": 1,
+      "dokotera": 1,
+      "lalana": 1
+    },
+    "('ny',)": {
+      "ray": 3,
+      "fianakaviana": 1,
+      "rahavaviko": 1,
+      "zanaka": 1,
+      "havana": 1,
+      "toetr'andro": 2,
+      "andro": 1,
+      "rivotra": 1,
+      "orana": 2,
+      "masoandro": 3,
+      "lanitra": 2,
+      "vary": 2,
+      "sakafo": 1,
+      "reniko": 1,
+      "trano": 5,
+      "vidiny": 1,
+      "ankizy": 1,
+      "voninkazo": 1,
+      "tendrombohitra": 1,
+      "ranomasina": 2,
+      "hazo": 2,
+      "biby": 1,
+      "raiko": 1,
+      "asa": 2,
+      "vola": 1,
+      "lalana": 1,
+      "vaovao": 2,
+      "sekoly": 1,
+      "kapoaka": 1,
+      "lamba": 1,
+      "boky": 1,
+      "ahitra": 1,
+      "fiainana": 1,
+      "hevitra": 2,
+      "tanàna": 1,
+      "maraina": 1,
+      "mitataovovonana": 1,
+      "hariva": 1,
+      "alina": 2,
+      "fahombiazana": 1,
+      "mamaky": 1,
+      "mihaino": 1,
+      "mijery": 1,
+      "milalao": 1,
+      "mandeha": 1,
+      "namana": 1,
+      "fo": 1,
+      "teny": 1,
+      "mahantra": 1,
+      "sahirana": 1,
+      "fahamarinana": 1,
+      "marina": 1,
+      "mandainga": 1,
+      "mahay": 1,
+      "tsy": 1,
+      "fihavanana": 1,
+      "olona": 1
+    },
+    "('ray',)": {
+      "aman-dreninao": 1,
+      "aman-dreny": 2
+    },
+    "('tsara',)": {
+      "daholo": 1,
+      "ny": 5,
+      "aho": 1,
+      "tarehy": 1,
+      "fahasalamana": 1,
+      "izany": 1
+    },
+    "('daholo',)": {
+      "ny": 1
+    },
+    "('zanaka',)": {
+      "efatra": 1,
+      "roa": 1
+    },
+    "('efatra',)": {
+      "aho": 1,
+      "no": 1
+    },
+    "('zoky',)": {
+      "lehibe": 1
+    },
+    "('lehibe',)": {
+      "aho": 1
+    },
+    "('tiako',)": {
+      "ny": 8
+    },
+    "('manaja',)": {
+      "ny": 2
+    },
+    "('aman-dreny',)": {
+      "aho": 1
+    },
+    "('mandeha',)": {
+      "any": 5,
+      "amin'ny": 2,
+      "an-tongotra": 1,
+      "aho": 1,
+      "an-tsangasanga": 1
+    },
+    "('an-tsena',)": {
+      "aho": 3
+    },
+    "('am-piasana',)": {
+      "aho": 1
+    },
+    "('an-tsekoly',)": {
+      "ny": 1
+    },
+    "('miverina',)": {
+      "any": 1,
+      "ny": 1
+    },
+    "('an-trano',)": {
+      "aho": 2
+    },
+    "('mitsidika',)": {
+      "ny": 1
+    },
+    "('havana',)": {
+      "aho": 1
+    },
+    "('fiara',)": {
+      "aho": 1
+    },
+    "('an-tongotra',)": {
+      "aho": 1
+    },
+    "(\"toetr'andro\",)": {
+      "androany": 1,
+      "dia": 1
+    },
+    "('mafana',)": {
+      "loatra": 1,
+      "ny": 1
+    },
+    "('loatra',)": {
+      "ny": 1,
+      "aho": 2
+    },
+    "('mangatsiaka',)": {
+      "ny": 2
+    },
+    "('milatsaka',)": {
+      "ny": 1
+    },
+    "('mamirapiratra',)": {
+      "ny": 1
+    },
+    "('maizina',)": {
+      "ny": 2
+    },
+    "('vary',)": {
+      "amin'ny": 1,
+      "sy": 1,
+      "io": 1
+    },
+    "('matsiro',)": {
+      "ny": 1
+    },
+    "('noana',)": {
+      "aho": 2
+    },
+    "('mividy',)": {
+      "sakafo": 1,
+      "entana": 1,
+      "vary": 1
+    },
+    "('mahandro',)": {
+      "sakafo": 1
+    },
+    "('sy',)": {
+      "laoka": 1,
+      "ny": 1
+    },
+    "('laoka',)": {
+      "izahay": 1
+    },
+    "('faly',)": {
+      "aho": 3,
+      "loatra": 1
+    },
+    "('malahelo',)": {
+      "aho": 1
+    },
+    "('sosotra',)": {
+      "loatra": 1
+    },
+    "('reraka',)": {
+      "aho": 1,
+      "aza": 1
+    },
+    "('marary',)": {
+      "aho": 2,
+      "loha": 1,
+      "kibo": 1
+    },
+    "('mangetaheta',)": {
+      "aho": 1
+    },
+    "('mafy',)": {
+      "aho": 1
+    },
+    "('manoratra',)": {
+      "taratasy": 2,
+      "aho": 1
+    },
+    "('taratasy',)": {
+      "aho": 1
+    },
+    "('mamaky',)": {
+      "boky": 3,
+      "aho": 1
+    },
+    "('boky',)": {
+      "aho": 2,
+      "telo": 1,
+      "io": 1,
+      "ity": 1
+    },
+    "('lesona',)": {
+      "aho": 1
+    },
+    "('devoara',)": {
+      "aho": 1
+    },
+    "('mijery',)": {
+      "fahitalavitra": 1,
+      "sarimihetsika": 1
+    },
+    "('fahitalavitra',)": {
+      "aho": 1
+    },
+    "('aiza',)": {
+      "ianao": 1,
+      "ny": 1
+    },
+    "('ianao',)": {
+      "izao": 1,
+      "hiverina": 1
+    },
+    "('trano',)": {
+      "fivarotana": 2,
+      "aho": 1
+    },
+    "('firy',)": {
+      "ny": 1
+    },
+    "('oviana',)": {
+      "ianao": 1
+    },
+    "('iza',)": {
+      "no": 1
+    },
+    "('no',)": {
+      "nankaty": 1,
+      "vaovao": 1,
+      "ilaina": 1
+    },
+    "('inona',)": {
+      "no": 1
+    },
+    "('nahoana',)": {
+      "ianao": 1
+    },
+    "('manasa',)": {
+      "lamba": 1
+    },
+    "('lamba',)": {
+      "aho": 1
+    },
+    "('manadio',)": {
+      "trano": 1
+    },
+    "('entana',)": {
+      "aho": 1
+    },
+    "('mandray',)": {
+      "vahiny": 1
+    },
+    "('vahiny',)": {
+      "aho": 1
+    },
+    "('lalao',)": {
+      "ny": 1
+    },
+    "('mihira',)": {
+      "aho": 1
+    },
+    "('mandihy',)": {
+      "aho": 1
+    },
+    "('tarehy',)": {
+      "ny": 1
+    },
+    "('avo',)": {
+      "ny": 1
+    },
+    "('lalina',)": {
+      "ny": 1
+    },
+    "('maitso',)": {
+      "ny": 2
+    },
+    "('be',)": {
+      "ny": 4,
+      "kivy": 1
+    },
+    "('biby',)": {
+      "any": 1
+    },
+    "('fa',)": {
+      "mila": 1
+    },
+    "('mila',)": {
+      "mividy": 1,
+      "efatra": 1
+    },
+    "('afaka',)": {
+      "ho": 1
+    },
+    "('ho',)": {
+      "avy": 3,
+      "tsara": 2,
+      "vanona": 1
+    },
+    "('avy',)": {
+      "aho": 1,
+      "izy": 1
+    },
+    "('satria',)": {
+      "marary": 1,
+      "noana": 1
+    },
+    "('rehefa',)": {
+      "miverina": 1,
+      "vita": 2
+    },
+    "(\"alohan'ny\",)": {
+      "handehanako": 1
+    },
+    "('vita',)": {
+      "ny": 2,
+      "dimy": 1
+    },
+    "('mahay',)": {
+      "miteny": 2,
+      "manoratra": 1,
+      "mamaky": 1,
+      "manao": 1,
+      "dia": 2
+    },
+    "('miteny',)": {
+      "frantsay": 1,
+      "malagasy": 1
+    },
+    "('frantsay',)": {
+      "aho": 1
+    },
+    "('olona',)": {
+      "eto": 1,
+      "iray": 1,
+      "be": 1
+    },
+    "('ampy',)": {
+      "ny": 1
+    },
+    "('malagasy',)": {
+      "aho": 1
+    },
+    "('mahafantatra',)": {
+      "ny": 1
+    },
+    "('lalana',)": {
+      "aho": 1,
+      "marina": 1
+    },
+    "('mahalala',)": {
+      "ny": 1
+    },
+    "('vaovao',)": {
+      "aho": 1,
+      "ratsy": 1
+    },
+    "('avaratra',)": {
+      "ny": 1
+    },
+    "('atsimo',)": {
+      "ny": 1
+    },
+    "('atsinanana',)": {
+      "ny": 1
+    },
+    "('masoandro',)": {
+      "miposaka": 1,
+      "milentika": 1
+    },
+    "('andrefana',)": {
+      "ny": 1
+    },
+    "('ankavanana',)": {
+      "ny": 1
+    },
+    "('ankavia',)": {
+      "ny": 1
+    },
+    "('fotsy',)": {
+      "ny": 1
+    },
+    "('mainty',)": {
+      "ny": 1
+    },
+    "('mena',)": {
+      "ny": 1
+    },
+    "('manga',)": {
+      "ny": 1
+    },
+    "('mavo',)": {
+      "ny": 1
+    },
+    "('iray',)": {
+      "eto": 1
+    },
+    "('roa',)": {
+      "aho": 1
+    },
+    "('telo',)": {
+      "eo": 1
+    },
+    "('eo',)": {
+      "ambony": 1
+    },
+    "('ambony',)": {
+      "latabatra": 1
+    },
+    "('dimy',)": {
+      "minitra": 1
+    },
+    "('omaly',)": {
+      "aho": 1
+    },
+    "('androany',)": {
+      "aho": 1
+    },
+    "('rahampitso',)": {
+      "aho": 1
+    },
+    "(\"tamin'ny\",)": {
+      "volana": 1,
+      "zavatra": 1
+    },
+    "('volana',)": {
+      "lasa": 1
+    },
+    "('taona',)": {
+      "ho": 1
+    },
+    "('ahy',)": {
+      "io": 1
+    },
+    "('io',)": {
+      "boky": 1,
+      "vary": 1
+    },
+    "('anao',)": {
+      "io": 1
+    },
+    "('azy',)": {
+      "ny": 1,
+      "ireo": 1
+    },
+    "('antsika',)": {
+      "ny": 1
+    },
+    "('anareo',)": {
+      "ny": 1
+    },
+    "('ireo',)": {
+      "ny": 1
+    },
+    "('omeo',)": {
+      "rano": 1,
+      "sakafo": 1
+    },
+    "('alao',)": {
+      "ity": 1
+    },
+    "('ity',)": {
+      "boky": 1,
+      "kapoaka": 1
+    },
+    "('makà',)": {
+      "ity": 1
+    },
+    "('kapoaka',)": {
+      "ity": 1
+    },
+    "('manadìo',)": {
+      "ny": 1
+    },
+    "('orana',)": {
+      "androany": 1
+    },
+    "('mangatsaka',)": {
+      "ny": 1
+    },
+    "('kivy',)": {
+      "aho": 1
+    },
+    "('noho',)": {
+      "ny": 3
+    },
+    "('taitra',)": {
+      "aho": 1
+    },
+    "('zavatra',)": {
+      "hitako": 1
+    },
+    "('menatra',)": {
+      "aho": 1
+    },
+    "('matahotra',)": {
+      "aho": 1
+    },
+    "('loha',)": {
+      "aho": 1
+    },
+    "('kibo',)": {
+      "aho": 1
+    },
+    "('fahasalamana',)": {
+      "aho": 1
+    },
+    "('dokotera',)": {
+      "aho": 1
+    },
+    "('mihaino',)": {
+      "hira": 1
+    },
+    "('milalao',)": {
+      "baolina": 1
+    },
+    "('raha',)": {
+      "tsara": 1
+    },
+    "('dia',)": {
+      "handeha": 1,
+      "hiverina": 1,
+      "nihinana": 1,
+      "reraka": 1,
+      "mitohy": 1,
+      "mandresy": 1,
+      "resy": 1
+    },
+    "('handeha',)": {
+      "any": 1,
+      "aho": 1
+    },
+    "('asa',)": {
+      "dia": 1
+    },
+    "('hiverina',)": {
+      "any": 1
+    },
+    "('nihinana',)": {
+      "sakafo": 1
+    },
+    "('na',)": {
+      "dia": 1
+    },
+    "('aza',)": {
+      "aho": 1
+    },
+    "('mitohy',)": {
+      "miasa": 1
+    },
+    "('mba',)": {
+      "tonga": 1,
+      "very": 1
+    },
+    "('tonga',)": {
+      "haingana": 1
+    },
+    "('haingana',)": {
+      "azafady": 1
+    },
+    "('diso',)": {
+      "izany": 1
+    },
+    "('marina',)": {
+      "izany": 1,
+      "tsy": 1
+    },
+    "('mety',)": {
+      "izany": 1,
+      "ho": 1
+    },
+    "('azo',)": {
+      "atao": 2
+    },
+    "('atao',)": {
+      "izany": 2
+    },
+    "('maintsy',)": {
+      "handeha": 1
+    },
+    "('tia',)": {
+      "an'andriamanitra": 1,
+      "vola": 1
+    },
+    "(\"an'andriamanitra\",)": {
+      "sy": 1
+    },
+    "('aoka',)": {
+      "ho": 2
+    },
+    "('manomeza',)": {
+      "ny": 1
+    },
+    "('manampy',)": {
+      "ny": 1
+    },
+    "('mitady',)": {
+      "ny": 1
+    },
+    "('mandainga',)": {
+      "tsy": 1
+    },
+    "('izay',)": {
+      "tia": 1
+    },
+    "('vola',)": {
+      "very": 1
+    },
+    "('very',)": {
+      "soa": 1
+    }
+  },
+  "word_freq": {
+    "manao": 6,
+    "ahoana": 3,
+    "ianao": 4,
+    "hianao": 1,
+    "salama": 2,
+    "e": 2,
+    "veloma": 1,
+    "misaotra": 1,
+    "betsaka": 1,
+    "azafady": 2,
+    "tompoko": 1,
+    "tsy": 14,
+    "misy": 7,
+    "fisaorana": 1,
+    "miala": 1,
+    "tsiny": 1,
+    "aho": 73,
+    "mihinana": 3,
+    "sakafo": 8,
+    "misotro": 3,
+    "rano": 2,
+    "kafe": 1,
+    "dite": 1,
+    "matory": 1,
+    "ankehitriny": 1,
+    "mifoha": 1,
+    "maraina": 2,
+    "miasa": 3,
+    "isan'andro": 1,
+    "mianatra": 2,
+    "any": 16,
+    "amin'ny": 8,
+    "sekoly": 2,
+    "ny": 75,
+    "ray": 3,
+    "aman-dreninao": 1,
+    "tsara": 10,
+    "daholo": 1,
+    "fianakaviana": 2,
+    "zanaka": 3,
+    "efatra": 2,
+    "zoky": 1,
+    "lehibe": 1,
+    "tiako": 8,
+    "rahavaviko": 1,
+    "manaja": 2,
+    "aman-dreny": 2,
+    "mandeha": 10,
+    "an-tsena": 3,
+    "am-piasana": 1,
+    "an-tsekoly": 1,
+    "miverina": 2,
+    "an-trano": 2,
+    "mitsidika": 1,
+    "havana": 1,
+    "fiara": 1,
+    "an-tongotra": 1,
+    "toetr'andro": 2,
+    "androany": 5,
+    "mafana": 2,
+    "loatra": 3,
+    "andro": 1,
+    "mangatsiaka": 2,
+    "rivotra": 1,
+    "milatsaka": 1,
+    "orana": 2,
+    "mamirapiratra": 1,
+    "masoandro": 3,
+    "maizina": 2,
+    "lanitra": 2,
+    "vary": 5,
+    "hena": 1,
+    "matsiro": 1,
+    "noana": 2,
+    "izao": 4,
+    "mividy": 3,
+    "mahandro": 1,
+    "reniko": 1,
+    "sy": 2,
+    "laoka": 1,
+    "izahay": 1,
+    "faly": 4,
+    "malahelo": 1,
+    "sosotra": 1,
+    "reraka": 2,
+    "marary": 5,
+    "mangetaheta": 1,
+    "mafy": 1,
+    "manoratra": 3,
+    "taratasy": 2,
+    "mamaky": 4,
+    "boky": 7,
+    "lesona": 1,
+    "devoara": 1,
+    "mijery": 2,
+    "fahitalavitra": 1,
+    "aiza": 2,
+    "trano": 6,
+    "fivarotana": 2,
+    "firy": 1,
+    "vidiny": 1,
+    "oviana": 1,
+    "hiverina": 2,
+    "iza": 1,
+    "no": 3,
+    "nankaty": 1,
+    "inona": 1,
+    "vaovao": 3,
+    "nahoana": 1,
+    "manasa": 1,
+    "lamba": 2,
+    "manadio": 1,
+    "entana": 1,
+    "mandray": 1,
+    "vahiny": 1,
+    "lalao": 1,
+    "ankizy": 1,
+    "mihira": 1,
+    "mandihy": 1,
+    "tarehy": 1,
+    "voninkazo": 1,
+    "avo": 1,
+    "tendrombohitra": 1,
+    "lalina": 1,
+    "ranomasina": 2,
+    "maitso": 2,
+    "hazo": 2,
+    "be": 5,
+    "biby": 1,
+    "an'ala": 1,
+    "fa": 1,
+    "mila": 2,
+    "afaka": 1,
+    "ho": 6,
+    "avy": 3,
+    "satria": 2,
+    "rehefa": 3,
+    "raiko": 1,
+    "alohan'ny": 1,
+    "handehanako": 1,
+    "vita": 3,
+    "asa": 2,
+    "mahay": 7,
+    "miteny": 2,
+    "frantsay": 1,
+    "olona": 3,
+    "eto": 2,
+    "ampy": 1,
+    "vola": 2,
+    "malagasy": 1,
+    "mahafantatra": 1,
+    "lalana": 2,
+    "mahalala": 1,
+    "avaratra": 1,
+    "atsimo": 1,
+    "atsinanana": 1,
+    "miposaka": 1,
+    "andrefana": 1,
+    "milentika": 1,
+    "ankavanana": 1,
+    "ankavia": 1,
+    "fotsy": 1,
+    "kapoaka": 2,
+    "mainty": 1,
+    "mena": 1,
+    "manga": 1,
+    "ahitra": 1,
+    "mavo": 1,
+    "iray": 1,
+    "roa": 1,
+    "telo": 1,
+    "eo": 1,
+    "ambony": 1,
+    "latabatra": 1,
+    "ilaina": 1,
+    "dimy": 1,
+    "minitra": 1,
+    "omaly": 1,
+    "nandeha": 1,
+    "mipetraka": 1,
+    "rahampitso": 1,
+    "handeha": 3,
+    "tamin'ny": 2,
+    "volana": 1,
+    "lasa": 1,
+    "taona": 1,
+    "ahy": 1,
+    "io": 4,
+    "anao": 1,
+    "azy": 3,
+    "antsika": 1,
+    "fiainana": 1,
+    "anareo": 1,
+    "hevitra": 2,
+    "ireo": 1,
+    "tanàna": 1,
+    "omeo": 2,
+    "alao": 1,
+    "ity": 4,
+    "makà": 1,
+    "manadìo": 1,
+    "rivo-doza": 1,
+    "mitataovovonana": 1,
+    "mangatsaka": 1,
+    "hariva": 1,
+    "alina": 2,
+    "kivy": 1,
+    "noho": 3,
+    "ratsy": 1,
+    "fahombiazana": 1,
+    "taitra": 1,
+    "zavatra": 1,
+    "hitako": 1,
+    "menatra": 1,
+    "ataoko": 1,
+    "matahotra": 1,
+    "loha": 1,
+    "kibo": 1,
+    "fahasalamana": 1,
+    "dokotera": 1,
+    "mihaino": 1,
+    "hira": 1,
+    "sarimihetsika": 1,
+    "milalao": 1,
+    "baolina": 1,
+    "an-tsangasanga": 1,
+    "raha": 1,
+    "dia": 7,
+    "nihinana": 1,
+    "na": 1,
+    "aza": 1,
+    "mitohy": 1,
+    "ihany": 1,
+    "mba": 2,
+    "tonga": 1,
+    "haingana": 1,
+    "izany": 6,
+    "diso": 1,
+    "marina": 3,
+    "mety": 2,
+    "azo": 2,
+    "atao": 2,
+    "izy": 1,
+    "maintsy": 1,
+    "tia": 2,
+    "an'andriamanitra": 1,
+    "namana": 1,
+    "aoka": 2,
+    "fo": 1,
+    "teny": 1,
+    "manomeza": 1,
+    "mahantra": 1,
+    "manampy": 1,
+    "sahirana": 1,
+    "mitady": 1,
+    "fahamarinana": 1,
+    "very": 2,
+    "mandainga": 1,
+    "vanona": 1,
+    "mandresy": 1,
+    "resy": 1,
+    "fihavanana": 1,
+    "izay": 1,
+    "soa": 1
+  }
+}
