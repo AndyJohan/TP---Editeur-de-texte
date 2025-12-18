@@ -9,15 +9,15 @@
 
 # Documentation technique:
  Aperçu du Projet
- Objectif : Fournir des outils NLP adaptés au malagasy, en utilisant des modèles multilingues fine-tunés et des techniques optimisées pour les langues low-resource.<br />
- Technologies Principales :
- Backend : FastAPI pour les APIs.
- NLP : NLTK, Spacy .
- Frontend: react.
- Autres : Pandas pour manipulation de données, BeautifulSoup pour scraping.
-Couche de Prétraitement (Cleaning Room) :
-Nettoyage du texte : Normalisation (minuscules), suppression HTML, tokenisation, filtrage stopwords personnalisés pour malagasy.
-Utilise NLTK avec une liste de stopwords custom (e.g., 'ny', 'sy', 'amin').
+ -Objectif : Fournir des outils NLP adaptés au malagasy, en utilisant des modèles multilingues fine-tunés et des techniques optimisées pour les langues low-resource.<br />
+ -Technologies Principales :<br />
+ -Backend : FastAPI pour les APIs.<br />
+ -NLP : NLTK, Spacy .<br />
+ -Frontend: react.<br />
+ -Autres : Pandas pour manipulation de données, BeautifulSoup pour scraping.<br />
+ -Couche de Prétraitement (Cleaning Room) :<br />
+ -Nettoyage du texte : Normalisation (minuscules), suppression HTML, tokenisation, filtrage stopwords personnalisés pour malagasy.<br />
+ -Utilise NLTK avec une liste de stopwords custom (e.g., 'ny', 'sy', 'amin').<br />
 
 # Description des fonctionnalites IA:
 1-Nettoyage et Normalisation de Texte (Prétraitement IA) : Utilise un cleaner personnalisé pour normaliser le texte malagasy : mise en minuscules, suppression de balises HTML, tokenisation, filtrage de stopwords custom (e.g., 'ny', 'sy', 'amin') et suppression de la ponctuation.
