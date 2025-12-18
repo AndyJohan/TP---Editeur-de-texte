@@ -9,7 +9,7 @@
 
 # Documentation technique:
  Aperçu du Projet
- Objectif : Fournir des outils NLP adaptés au malagasy, en utilisant des modèles multilingues fine-tunés et des techniques optimisées pour les langues low-resource.
+ Objectif : Fournir des outils NLP adaptés au malagasy, en utilisant des modèles multilingues fine-tunés et des techniques optimisées pour les langues low-resource.<br />
  Technologies Principales :
  Backend : FastAPI pour les APIs.
  NLP : NLTK, Spacy .
