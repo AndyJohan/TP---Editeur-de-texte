@@ -20,11 +20,11 @@
  -Utilise NLTK avec une liste de stopwords custom (e.g., 'ny', 'sy', 'amin').<br />
 
 # Description des fonctionnalites IA:
-1-Nettoyage et Normalisation de Texte (Prétraitement IA) : Utilise un cleaner personnalisé pour normaliser le texte malagasy : mise en minuscules, suppression de balises HTML, tokenisation, filtrage de stopwords custom (e.g., 'ny', 'sy', 'amin') et suppression de la ponctuation.
-2-Autocomplétion de Mots (Prédiction Basée sur N-Gram):Suggest des compléments de mots ou phrases en malagasy basés sur un modèle n-gram entraîné sur un corpus
+1-Nettoyage et Normalisation de Texte (Prétraitement IA) : Utilise un cleaner personnalisé pour normaliser le texte malagasy : mise en minuscules, suppression de balises HTML, tokenisation, filtrage de stopwords custom (e.g., 'ny', 'sy', 'amin') et suppression de la ponctuation.<br />
+2-Autocomplétion de Mots (Prédiction Basée sur N-Gram):Suggest des compléments de mots ou phrases en malagasy basés sur un modèle n-gram entraîné sur un corpus<br />
 3-Correction Orthographique:Vérifie si un mot malagasy est correct et propose des suggestions de corrections basées sur un dictionnaire lemmatisé.
 # Biblioigraphie:
-  https://www.nltk.org/
-  https://tenymalagasy.org/bins/homePage
-  https://nybaiboly.net/Bible.htm
+  https://www.nltk.org/<br />
+  https://tenymalagasy.org/bins/homePage<br />
+  https://nybaiboly.net/Bible.htm<br />
   
